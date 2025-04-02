@@ -12,21 +12,21 @@ Database seeding for products
 
 Samples JSON requests for testing
   - Customers
-  1- for create a customer
-        POST =>  https://localhost:7201/api/customers
-        {
-            "name": "Kareem Hamada",
-            "email": "kareemhamada219@gmail.com",
-            "phone": "01123464360"
-        }
-  
-  2- For get customers
-      GET =>  https://localhost:7201/api/customers
-  3- For get customer by id
-      GET => https://localhost:7201/api/customers/1
+    - To create a customer
+          POST =>  https://localhost:7201/api/customers
+          {
+              "name": "Kareem Hamada",
+              "email": "kareemhamada219@gmail.com",
+              "phone": "01123464360"
+          }
+    
+    - To get customers
+        GET =>  https://localhost:7201/api/customers
+    - To get customer by ID
+        GET => https://localhost:7201/api/customers/1
 
   - Orders
-    1- For create an order
+    - To create an order
       POST =>  https://localhost:7201/api/orders
         {
             "customerId": 1,
@@ -42,10 +42,10 @@ Samples JSON requests for testing
             ]
         }
 
-    2- for get order by id
+    - To get order by ID
       GET => https://localhost:7201/api/orders/1
 
-    3- For update order status
+    - to update order status
       PUT => https://localhost:7201/api/orders/status/1
       {
           "status": "Delivered"
